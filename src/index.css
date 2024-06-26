@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: white;
+  color: black;
+  font-family: source-code-pro, Menlo, Monaco, Consolas,
+    monospace, sans-serif;
+}

@@ -1,0 +1,54 @@
+[
+    {
+      "id": "dfff12321",
+        "title": "Business fair",
+        "description": "For most businesses event like book fair, cradt fair.",
+        "price": 300,
+        "features": [
+          "limited space access",
+          "Secuirty facility",
+          "event support",
+          "Decoration design",
+          "Per day bill"
+        ]
+      },
+    {
+      "id": "fdsfd1f2ds1f",
+        "title": "Wedding basic",
+        "description": "For weddings with basic plan and limited item",
+        "price": 500,
+        "features": [
+          "Full space access",
+          "Food arrangement",
+          "Management support",
+          "Decoration design",
+          "Billed as shift"
+        ]
+      },
+    {
+      "id": "fd5sf5ds4fdsf",
+        "title": "Wedding plus",
+        "description": "For most weddings with premium plans",
+        "price": 800,
+        "features": [
+          "Full space access",
+          "Dedicated team",
+          "Buffet food",
+          "premium Decoration",
+          "pay as plant"
+        ]
+      },
+    {
+      "id": "tgr52fgds2fg",
+        "title": "Corporate event",
+        "description": "For most corporate business events",
+        "price": 1200,
+        "features": [
+          "Full space access",
+          "Dedicated team",
+          "Buffet food",
+          "premium Decoration",
+          "pay as plant"
+        ]
+      }
+]

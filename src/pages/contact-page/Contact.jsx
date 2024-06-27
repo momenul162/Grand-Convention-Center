@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 import bgImg from "../../assets/bg.png";
 
+const defaultValue = {
+  plan: "",
+  phone: "",
+  message: "",
+};
+
 const Contact = () => {
+  const [data, setData] = useState(defaultValue);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // You can perform additional actions here, like sending the form data to an API
+    // Example: fetch('/api/submitForm', { method: 'POST', body: JSON.stringify(data) })
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setData({ ...data, [name]: value });
+  };
+
   return (
     <div
       className="container mx-auto rounded-lg "
@@ -44,19 +64,25 @@ const Contact = () => {
             </div>
             <div className="divider lg:divider-horizontal">OR</div>
             <div className="card w-full shadow-md bg-slate-300 bg-opacity-80">
-              <form className="card-body">
+              <form onSubmit={handleSubmit} className="card-body">
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Choose Plan</span>
                   </label>
-                  <select required className="select select-primary bg-white w-full max-w-xs">
-                    <option disabled selected>
+                  <select
+                    required
+                    name="plan"
+                    value={data?.plan}
+                    onChange={handleChange}
+                    className="select select-primary bg-white w-full max-w-xs"
+                  >
+                    <option value="" disabled>
                       Choose your plan
                     </option>
-                    <option>Business fair ($300)</option>
-                    <option>Wedding basic ($500)</option>
-                    <option>Wedding plus ($800)</option>
-                    <option>Corporate event ($1200)</option>
+                    <option value="Business Fair">Business fair ($300)</option>
+                    <option value="Wedding Basic">Wedding basic ($500)</option>
+                    <option value="Wedding Plus">Wedding plus ($800)</option>
+                    <option value="Corporate Event">Corporate event ($1200)</option>
                   </select>
                 </div>
 
@@ -66,6 +92,9 @@ const Contact = () => {
                   </label>
                   <input
                     type="number"
+                    name="phone"
+                    value={data?.phone}
+                    onChange={handleChange}
                     placeholder="01********"
                     maxLength={11}
                     className="input input-primary bg-white"
@@ -77,13 +106,17 @@ const Contact = () => {
                     <span className="label-text">Details</span>
                   </label>
                   <textarea
-                    name="details"
+                    name="message"
+                    value={data?.message}
+                    onChange={handleChange}
                     className="textarea textarea-primary bg-white"
                     placeholder="Tell me details"
                   ></textarea>
                 </div>
                 <div className="form-control mt-6">
-                  <button className="btn btn-primary text-white">Submit</button>
+                  <button type="submit" className="btn btn-primary text-white">
+                    Submit
+                  </button>
                 </div>
               </form>
             </div>

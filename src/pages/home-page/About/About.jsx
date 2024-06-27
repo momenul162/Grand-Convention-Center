@@ -3,7 +3,7 @@ import weddingImg from "../../../assets/wedding.jpg";
 
 const About = () => {
   return (
-    <div id="about" className="hero my-10">
+    <div id="about" className="hero my-16 container mx-auto">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Every moment is Precious </h1>

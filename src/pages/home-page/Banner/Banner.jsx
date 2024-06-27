@@ -21,16 +21,14 @@ const Banner = () => {
             <p className="text-2xl md:text-4xl text-shadow text-lime-500">
               {" "}
               <Typewriter
-                words={["Wedding Ceremony", "Seminar"]}
+                words={["Business fair", "Wedding basic", "Wedding plus", "Corporate event"]}
                 loop={true}
                 cursor
                 typeSpeed={70}
                 delaySpeed={2000}
               />
             </p>
-            <button className="btn btn-sm mt-4 px-8 btn-accent btn-outline rounded-r">
-              Book Now
-            </button>
+            <button class="btn btn-primary bg-transparent btn-outline px-8 mt-6">Book Now</button>
           </div>
         </div>
       </div>

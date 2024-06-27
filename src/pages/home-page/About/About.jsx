@@ -6,7 +6,7 @@ const About = () => {
     <div id="about" className="hero my-16 container mx-auto">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Every moment is Precious </h1>
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold">Every moment is Precious </h1>
           <p className="py-6">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
             consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.

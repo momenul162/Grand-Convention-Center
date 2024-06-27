@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Package = () => {
   const [pricing, setPricing] = useState([]);
@@ -52,11 +53,13 @@ const Package = () => {
                     </li>
                   ))}
                 </ul>
-                <div class="card-actions justify-center mt-4">
-                  <button class="btn btn-primary bg-transparent btn-outline mt-4">
-                    Choose Plan
-                  </button>
-                </div>
+                <Link to="/contact">
+                  <div class="card-actions justify-center mt-4">
+                    <button class="btn btn-primary bg-transparent btn-outline mt-4">
+                      Choose Plan
+                    </button>
+                  </div>
+                </Link>
               </div>
             </div>
           ))}

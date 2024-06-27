@@ -3,6 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { Parallax } from "react-parallax";
 import bgimg from "../../../assets/bg-banner.jpg";
 import Navbar from "../../../shared/Navbar/Navbar";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -28,7 +29,9 @@ const Banner = () => {
                 delaySpeed={2000}
               />
             </p>
-            <button class="btn btn-primary bg-transparent btn-outline px-8 mt-6">Book Now</button>
+            <Link to="/contact">
+              <button class="btn btn-primary bg-transparent btn-outline px-8 mt-6">Book Now</button>
+            </Link>
           </div>
         </div>
       </div>

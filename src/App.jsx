@@ -1,5 +1,7 @@
 import React from "react";
 import Main from "./layout/Main";
+import Contact from "./pages/contact-page/Contact";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import About from "./pages/home-page/About/About";
 // import Package from "./pages/home-page/Package/Package";
@@ -8,20 +10,15 @@ import Main from "./layout/Main";
 
 const App = () => {
   return (
-    <div>
-      <Main />
-    </div>
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<Main />}>
-    //       <Route path="about" element={<About />} />
-    //       <Route path="packages" element={<Package />} />
-    //       <Route path="reviews" element={<Review />} />
-    //       <Route path="questions" element={<Question />} />
-    //       {/* <Route path="subscribe" element={}/> */}
-    //     </Route>
-    //   </Routes>
-    // </BrowserRouter>
+    // <div>
+    //   <Main />
+    // </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />}></Route>
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

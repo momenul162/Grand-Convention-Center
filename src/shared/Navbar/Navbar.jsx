@@ -1,13 +1,15 @@
 import React from "react";
+import logo from "/convention.icon.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navItem = (
     <>
       <li>
-        <a href="#about">About</a>
+        <a href="#packages">Packages</a>
       </li>
       <li>
-        <a href="#packages">Packages</a>
+        <Link to="/contact">Contact</Link>
       </li>
       <li>
         <a href="#reviews">Reviews</a>
@@ -46,9 +48,14 @@ const Navbar = () => {
               {navItem}
             </ul>
           </div>
-          <a className="btn btn-ghost text-2xl md:text-4xl text-center text-lime-500 font-bold text-shadow">
-            Grand Hall
-          </a>
+          <Link to="/">
+            <div className="flex items-center">
+              <img className="h-12 w-12" src={logo} alt="" />
+              <a className="text-2xl md:text-4xl text-center text-lime-500 font-bold text-shadow">
+                Grand Hall
+              </a>
+            </div>
+          </Link>
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-xl md:text-2xl text-center text-lime-500 font-bold text-shadow">

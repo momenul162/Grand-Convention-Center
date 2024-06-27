@@ -7,9 +7,9 @@ import Navbar from "../../../shared/Navbar/Navbar";
 const Banner = () => {
   return (
     <Parallax blur={{ min: -30, max: 30 }} bgImage={bgimg} bgImageAlt="" strength={-200}>
-      <div className="bg-slate-500 bg-opacity-50">
+      <div className="bg-slate-500 bg-opacity-60">
         <Navbar />
-        <div className="hero-content text-center h-[410px] md:h-[600px] mx-auto">
+        <div className="hero-content text-center h-[430px] md:h-[600px] mx-auto">
           <div className="">
             <h1 className="mb-5 text-2xl md:text-5xl text-lime-500 font-bold text-shadow">
               The perfect venue for your next event

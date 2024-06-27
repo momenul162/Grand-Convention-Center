@@ -4,7 +4,7 @@ import img from "../../../assets/event-dining.jpg";
 const Question = () => {
   return (
     <div id="qna" className="my-16 container mx-auto">
-      <h2 className="text-2xl md:text-4xl text-center mb-6 text-neutral-600 font-bold text-shadow divider">
+      <h2 className="text-xl md:text-4xl text-center mb-6 text-neutral-600 font-bold text-shadow divider">
         Frequently Asked Any Questions
       </h2>
       <div className="hero">

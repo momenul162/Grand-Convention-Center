@@ -18,7 +18,7 @@ const Album = () => {
     setViewerIsOpen(false);
   };
   return (
-    <div className={`container mx-auto`}>
+    <div id="gallery" className={`container mx-auto`}>
       <h2 className="text-2xl md:text-4xl text-center mb-10 text-neutral-600 font-bold text-shadow divider">
         Our Photo Gallery
       </h2>

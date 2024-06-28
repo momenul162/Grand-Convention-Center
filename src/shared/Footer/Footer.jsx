@@ -10,13 +10,13 @@ const Footer = () => {
           <Link to="/">
             <div className="flex items-center">
               <img className="h-16 w-16" src={logo} alt="" />
-              <a className="text-2xl md:text-4xl text-center text-lime-500 font-bold text-shadow">
-                Grand Hall
+              <a className="text-xl md:text-3xl lg:text-4xl text-center text-lime-500 font-bold text-shadow">
+                Nexus Event Center
               </a>
             </div>
           </Link>
           <p>
-            Grand Hall Convention Center.
+            The Best Convention Center.
             <br />
             ©Copyright 2024. All rights reserved
           </p>

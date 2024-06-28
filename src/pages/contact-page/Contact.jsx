@@ -16,6 +16,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setData(defaultValue);
 
     // You can perform additional actions here, like sending the form data to an API
     // Example: fetch('/api/submitForm', { method: 'POST', body: JSON.stringify(data) })
@@ -114,11 +115,27 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <div className="form-control mt-6">
-                  <button type="submit" className="btn btn-primary text-white">
+                  <button
+                    // onClick={() => document.getElementById("my_modal_5").showModal()}
+                    type="submit"
+                    className="btn btn-primary text-white"
+                  >
                     Submit
                   </button>
                 </div>
               </form>
+              {/* Open the modal using document.getElementById('ID').showModal() method */}
+
+              {/* <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+                <div className="modal-box bg-white">
+                  <p className="py-4">Thanks for your response</p>
+                  <div className="modal-action">
+                    <form method="dialog">
+                      <button className="btn btn-outline bg-white">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog> */}
             </div>
           </div>
         </div>

@@ -51,8 +51,8 @@ const Navbar = () => {
           <Link to="/">
             <div className="flex items-center">
               <img className="h-12 w-12" src={logo} alt="" />
-              <a className="text-2xl md:text-4xl text-center text-lime-500 font-bold text-shadow">
-                Grand Hall
+              <a className="text-xl md:text-2xl lg:text-3xl text-lime-500 font-bold text-shadow">
+                Nexus Event Center
               </a>
             </div>
           </Link>

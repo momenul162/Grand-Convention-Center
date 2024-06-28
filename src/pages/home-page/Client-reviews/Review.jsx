@@ -7,7 +7,7 @@ import { Pagination } from "swiper/modules";
 const Review = () => {
   return (
     <div id="reviews" className="container mx-auto my-16">
-      <h2 className="text-2xl md:text-4xl text-center mb-8 text-neutral-600 font-bold text-shadow divider">
+      <h2 className="text-2xl md:text-4xl text-center mb-10 text-neutral-600 font-bold text-shadow divider">
         Happy Clients Says
       </h2>
       <Swiper
@@ -46,7 +46,7 @@ const Review = () => {
               beatae nostrum velit quia earum magnam, distinction.
             </p>
             <div className="avatar">
-              <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
+              <div className="ring-white ring-offset-violet-500 w-24 rounded-full ring ring-offset-2">
                 <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
               </div>
             </div>
@@ -63,7 +63,7 @@ const Review = () => {
               beatae nostrum velit quia earum magnam, distinction.
             </p>
             <div className="avatar">
-              <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
+              <div className="ring-white ring-offset-violet-500 w-24 rounded-full ring ring-offset-2">
                 <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
               </div>
             </div>
@@ -80,7 +80,7 @@ const Review = () => {
               beatae nostrum velit quia earum magnam, distinction.
             </p>
             <div className="avatar">
-              <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
+              <div className="ring-white ring-offset-violet-500 w-24 rounded-full ring ring-offset-2">
                 <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
               </div>
             </div>
@@ -97,7 +97,7 @@ const Review = () => {
               beatae nostrum velit quia earum magnam, distinction.
             </p>
             <div className="avatar">
-              <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
+              <div className="ring-white ring-offset-violet-500 w-24 rounded-full ring ring-offset-2">
                 <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
               </div>
             </div>

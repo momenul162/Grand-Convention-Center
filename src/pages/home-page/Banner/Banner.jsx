@@ -8,14 +8,14 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <Parallax blur={{ min: -30, max: 30 }} bgImage={bgimg} bgImageAlt="" strength={-200}>
-      <div className="bg-slate-500 bg-opacity-60">
+      <div className="bg-emerald-900 bg-opacity-40">
         <Navbar />
-        <div className="hero-content text-center h-[430px] md:h-[600px] mx-auto">
-          <div className="">
-            <h1 className="mb-5 text-2xl md:text-5xl text-lime-500 font-bold text-shadow">
+        <div className="hero-content text-center h-[430px] md:h-[600px] lg:h-[700px] mx-auto">
+          <div className="mt-10">
+            <h1 className="mb-5 text-2xl md:text-5xl text-lime-500 font-bold text-shadow-lg">
               The perfect venue for your next event
             </h1>
-            <p className="mb-5 md:text-3xl text-white text-shadow">
+            <p className="mb-5 md:text-3xl text-white text-shadow-lg">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
               officia consequat duis enim velit
             </p>
@@ -30,7 +30,7 @@ const Banner = () => {
               />
             </p>
             <Link to="/contact">
-              <button class="btn btn-primary bg-transparent btn-outline px-8 mt-6">Book Now</button>
+              <button class="btn btn-primary text-neutral-50 px-10 mt-6">Book Now</button>
             </Link>
           </div>
         </div>
